@@ -6,11 +6,11 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/auth/:path*",
-        destination: "http://localhost:3001/:path*",
+        destination: `${process.env.NEXT_CONFIG_AUTH_URL}/:path*`,
       },
       {
         source: "/dashboard/:path*",
-        destination: "http://localhost:3002/:path*",
+        destination: `${process.env.NEXT_CONFIG_DASHBOARD_URL}/:path*`,
       },
     ];
   },
