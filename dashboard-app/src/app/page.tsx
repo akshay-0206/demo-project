@@ -11,6 +11,13 @@ export default function Dashboard() {
         Services
       </a>
       <br />
+      <a
+        href="/dashboard/banner"
+        className="text-blue-500 underline mt-6 block"
+      >
+        Banner
+      </a>
+      <br />
       <a href="/" className="text-blue-500 underline mt-6 block">
         Back to Home
       </a>
